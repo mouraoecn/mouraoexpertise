@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mouraoexpertise.com.br/sitemap.xml
