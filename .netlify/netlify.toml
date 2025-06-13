@@ -1,0 +1,60 @@
+plugins = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "D:\\Projetos\\Sites\\MouraoExpertise"
+publishOrigin = "default"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Content-Security-Policy = "default-src 'self';"
+"style-src 'self' 'unsafe-inline' https" = "//fonts.googleapis.com;"
+"font-src 'self' https" = "//fonts.gstatic.com;"
+"img-src 'self' data" = ";"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+Referrer-Policy = "no-referrer-when-downgrade"
+Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/index.html"
+to = "/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
