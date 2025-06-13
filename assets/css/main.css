@@ -1859,3 +1859,27 @@ section,
   font-style: italic;
   color: #6557FF;
 }
+/* Realce para links em seções de título */
+.section-title p a {
+  color: #b48a00;              /* Dourado sóbrio */
+  font-weight: 600;            /* Destaque moderado */
+  text-decoration: none;       /* Limpo, sem sublinhado por padrão */
+  transition: color 0.3s ease; /* Suaviza o hover */
+}
+
+.section-title p a:hover {
+  color: #8c6d00;              /* Tom mais escuro no hover */
+  text-decoration: underline;  /* Evidência interativa */
+}
+
+a.destaque-principal {
+  color: #b48a00;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.destaque-principal:hover {
+  color: #8c6d00;
+  text-decoration: underline;
+}
