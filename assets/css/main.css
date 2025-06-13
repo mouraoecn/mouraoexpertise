@@ -1883,3 +1883,15 @@ a.destaque-principal:hover {
   color: #8c6d00;
   text-decoration: underline;
 }
+
+.destaque-feature a {
+  color: #b48a00;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.destaque-feature a:hover {
+  color: #8c6d00;
+  text-decoration: underline;
+}
