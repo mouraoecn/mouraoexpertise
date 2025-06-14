@@ -1861,7 +1861,7 @@ section,
 }
 /* Realce para links em seções de título */
 .section-title p a {
-  color: #b48a00;              /* Dourado sóbrio */
+  color: #8a7b00;              /* Dourado sóbrio */
   font-weight: 600;            /* Destaque moderado */
   text-decoration: none;       /* Limpo, sem sublinhado por padrão */
   transition: color 0.3s ease; /* Suaviza o hover */
