@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Página não encontrada</title>
-    <link rel="canonical" href="https://mouraoexpertise.com.br/404.html" />
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada | Mourão Expertise</title>
+  <meta name="description" content="Página não encontrada. Análise jurídica e econômica de contratos bancários, imobiliários e empresariais.">
+  
+  <!-- Favicons (mesmo do index) -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS (use o mesmo do seu site) -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container text-center">
-        <h1>Erro 404</h1>
-        <p>A página que você procurou não foi encontrada.</p>
-        <a href="/" class="btn btn-primary">Voltar para a página inicial</a>
+<body class="error-page">
+  <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <div class="text-center py-5" data-aos="fade-up">
+      <!-- Ícone de erro (opcional) -->
+      <div class="error-icon mb-4">
+        <i class="bi bi-exclamation-octagon" style="font-size: 4rem; color: #e63946;"></i>
+      </div>
+
+      <h1 class="display-4 fw-bold">404</h1>
+      <h2 class="mb-4">Página não encontrada</h2>
+      <p class="lead mb-4">A página que você está procurando não existe ou foi movida.</p>
+      
+      <!-- Botão para voltar à home -->
+      <a href="/" class="btn btn-primary btn-lg mt-3">
+        <i class="bi bi-house-door me-2"></i>Voltar à página inicial
+      </a>
+
+      <!-- Link para contato (opcional) -->
+      <p class="mt-4">Precisa de ajuda? <a href="/#contact" class="text-decoration-underline">Entre em contato</a></p>
     </div>
+  </div>
+
+  <!-- Footer (simplificado) -->
+  <footer class="footer py-4 mt-auto bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 Mourão Expertise. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts (opcional, para animações) -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
