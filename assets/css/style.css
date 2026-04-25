@@ -359,3 +359,31 @@ footer { padding: 34px 0; border-top: 1px solid var(--line); background: var(--n
   .back-top { bottom: 82px; }
   .whatsapp-float { bottom: 20px; }
 }
+
+/* Correção mobile: menu, backdrop e botões flutuantes */
+header {
+  z-index: 120;
+}
+
+@media (max-width: 900px) {
+  nav {
+    z-index: 140;
+  }
+
+  .menu-open .menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(16,26,36,.42);
+  }
+}
+
+.back-top,
+.whatsapp-float {
+  z-index: 160;
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto;
+}
