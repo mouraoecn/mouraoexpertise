@@ -387,3 +387,58 @@ header {
   visibility: visible !important;
   pointer-events: auto;
 }
+
+/* Correção definitiva: botões flutuantes e menu mobile */
+html,
+body {
+  overflow-x: hidden;
+}
+
+header {
+  z-index: 10010 !important;
+}
+
+.menu-backdrop {
+  z-index: 9000 !important;
+}
+
+@media (max-width: 900px) {
+  nav {
+    z-index: 10020 !important;
+  }
+
+  .menu-open .menu-backdrop {
+    display: block !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 9000 !important;
+    background: rgba(16,26,36,.42) !important;
+  }
+}
+
+.back-top,
+.whatsapp-float {
+  position: fixed !important;
+  right: 16px !important;
+  z-index: 10000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.whatsapp-float {
+  bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.back-top {
+  bottom: calc(82px + env(safe-area-inset-bottom)) !important;
+  width: 50px !important;
+  height: 50px !important;
+}
