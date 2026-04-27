@@ -1,4 +1,15 @@
-User-agent: *
-Disallow:
+# Mourão Expertise — robots.txt
+# https://mouraoexpertise.com.br/
 
+User-agent: *
+Allow: /
+
+# Bloquear assets desnecessários para crawlers
+Disallow: /assets/css/
+Disallow: /assets/img/brand/
+
+# Permitir imagens de equipe (aparecem no Google Images)
+Allow: /assets/img/team/
+
+# Sitemap
 Sitemap: https://mouraoexpertise.com.br/sitemap.xml
